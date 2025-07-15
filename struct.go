@@ -6,9 +6,13 @@ type Customer struct {
 	Age 		  int
 }
 
+func (customer Customer) sayHello(name string) {
+	fmt.Println("Hello", name, "my name is", customer.Name) // Method function 
+}
+
 func main() {
 	var customer Customer
-	customer.Name = "Berdine Rose"
+	customer.Name = "Bernard Rose"
 	customer.Address = ", Rizal Street, Manila"
 	customer.Age = 70
 
@@ -22,7 +26,9 @@ func main() {
 
 	fmt.Println(Kuma)
 
-	LysBien := Customer{"Lys Bien", "Puta's village, Rizal", 17}
+	LysBien := Customer{"LysBien", "Puta's village, Rizal", 17}
 	fmt.Println(LysBien)
+
+	Kuma.sayHello("LysBien") // Call method function of Kuma. Cant do this " sayHello() "
 }
 
