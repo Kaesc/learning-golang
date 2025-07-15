@@ -1,5 +1,6 @@
 package main
 import (
+	_"belajar-golang/internal" // Corrected import path
 	"belajar-golang/database" // Corrected import path
 	"fmt"
 )
